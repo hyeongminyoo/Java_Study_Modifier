@@ -3,6 +3,7 @@ package com.iu.main;
 import com.iu.terran.Marine;
 import com.iu.terran.Scv;
 import com.iu.unit.Unit;
+import com.iu.zerg.Hydra;
 
 public class Main {
 
@@ -14,6 +15,10 @@ public class Main {
 		//Scv is a Unit
 		
 		Unit unit = m1; // 슈퍼클래스에 자식클래스를 대입은 타입 변환 필요없음
+		Hydra hydra = new Hydra();
+		
+		m1.attack();
+		hydra.attack();
 		
 		
 		

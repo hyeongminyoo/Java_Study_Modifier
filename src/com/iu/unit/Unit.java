@@ -19,6 +19,9 @@ public abstract class Unit {
 	//
 	public abstract void move(); //추상클래스 : 완성되지않은 메서드
 	
+//	public abstract void attack();
+	
+	
 	public void info() {
 		System.out.println("Super Info");
 	}
