@@ -12,10 +12,10 @@ public class Client {
 		this.setPoint(10);
 	}
 	
-	public void buy(Tv tv) {
+	public void buy(Product product) {
 	
-		this.point = this.point + tv.getPoint();
-		this.money = this.money - tv.getPrice(); 
+		this.point = this.point + product.getPoint();
+		this.money = this.money - product.getPrice(); 
 		
 		System.out.println("누적 Point : " + this.point);
 		System.out.println("남은 돈 : " + this.money);
