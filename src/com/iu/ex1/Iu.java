@@ -4,6 +4,9 @@ public class Iu {
 
 	private String name;
 	private int age;
+	//fix-study
+	private String test;
+	
 	private static Iu iu = null; //클래스 메서드 내에서 사용 가능
 	
 	//Setter
