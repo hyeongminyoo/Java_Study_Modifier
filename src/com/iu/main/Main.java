@@ -1,28 +1,17 @@
 package com.iu.main;
 
-import com.iu.animal.Cat;
-import com.iu.animal.Human;
-import com.iu.animal.Zoo;
+import com.iu.terran.Marine;
 
 public class Main {
 
 	public static void main(String[] args) {
+		//자식 객체를 만들면 부모 객체부터 생성함
+		Marine m1 = new Marine();
+		m1.setHp(30);
+//		Unit unit = Unit(); Class 앞에 abstract가 붙었으므로 객체생성 불가능 , 추상 클래스는 무조건 상속하여 사용
 		
-		//Cat cat = new Cat();
-		//cat.sound();
-		//cat.age=5;
-		Human human = new Human();
-//		human.age=500;
-		human.setAge(200);
-		human.info();
-		//--------------------------------------------
-		System.out.println(Zoo.title);
-		Zoo.info();
-		
-		Zoo zoo = new Zoo();
-//		zoo.price = 10000; final 영역이므로 변경 불가능
-		
-		
+		m1.info();
+		m1.move();
 		
 	}
 
