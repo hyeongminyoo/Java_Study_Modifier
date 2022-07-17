@@ -26,11 +26,12 @@ public class CollectionStack implements Collection {
 		int j = 0;
 		for(int i=0; i<numbers.length;i++) {
 			if(i==0) {
-				j++;
+				i++;
 			}
 			numbersCopy[j] = numbers[i];
+			j++;
 		}
 		
-		return numbers;
+		return numbersCopy;
 	}
 }

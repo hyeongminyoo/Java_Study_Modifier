@@ -10,22 +10,28 @@ public class CollectionQue implements Collection {
 		System.out.println("추가할 숫자 입력");
 		int num = sc.nextInt();
 		
-		numbers[0] = num;
+		int[] numbersCopy = new int[(numbers.length+1)];
+		numbersCopy[0] = num;
+		int j = 1;
+		for(int i=0; i<numbers.length;i++) {
+			numbersCopy[j] = numbers[i];
+			j++;
+		}
 		
-		return numbers;
+		return numbersCopy;
 	}
 	
+	@Override
 	public int[] remover(int[] numbers) {
-		int [] numbersCopy = new int[numbers.length-1];
-		int i = 0;
-		for(i=0; i<numbers.length;i++) {
-			if(i==numbers.length) {
-				break;
-			}
+		int [] numbersCopy = new int[(numbers.length-1)];
+		for(int i=0 ; i<numbersCopy.length; i++) {
+			
+			System.out.println(numbersCopy[i]);
+		}
+		for(int i=0; i<numbersCopy.length;i++) {
 			numbersCopy[i] = numbers[i];
 		}
 		
 		return numbersCopy;
-
 	}
 }

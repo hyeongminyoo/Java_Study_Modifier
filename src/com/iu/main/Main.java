@@ -1,5 +1,7 @@
 package com.iu.main;
 
+import com.iu.util.CollectionQue;
+import com.iu.util.CollectionSet;
 import com.iu.util.CollectionStack;
 
 public class Main {
@@ -8,15 +10,49 @@ public class Main {
 		//test data set
 		int [] nums = {1,2,3};
 		
-		CollectionStack collectionStack = new CollectionStack();
-		nums = collectionStack.add(nums);
+//		CollectionStack collectionStack = new CollectionStack();
+//		nums = collectionStack.add(nums);
+//		for(int i=0 ; i<nums.length; i++) {
+//			System.out.println(nums[i]);
+//		}
+//		System.out.println("제거");
+//		nums = collectionStack.remover(nums);
+//		for(int i=0 ; i<nums.length; i++) {
+//			
+//			System.out.println(nums[i]);
+//		}
+		
+//		CollectionQue collectionQue = new CollectionQue();
+//		nums = collectionQue.add(nums);
+//		for(int i=0 ; i<nums.length; i++) {
+//			
+//			System.out.println(nums[i]);
+//		}
+//		
+//		nums = collectionQue.remover(nums);
+//
+//		System.out.println("제거");
+//		for(int i=0 ; i<nums.length; i++) {
+//			
+//			System.out.println(nums[i]);
+//		}
+		
+		CollectionSet collectionSet = new CollectionSet();
+//		nums = collectionSet.add(nums);
+//		for(int i=0 ; i<nums.length; i++) {
+//			
+//			System.out.println(nums[i]);
+//		}
+		
+		nums = collectionSet.remover(nums);
+
 		for(int i=0 ; i<nums.length; i++) {
+			
 			System.out.println(nums[i]);
 		}
-		nums = collectionStack.remover(nums);
-		for(int i=0 ; i<nums.length; i++) {
-			System.out.println(nums[i]);
-		}
+		
+		
+		
 		
 		//1.com.iu.util.CollectionStack
 			// add - 입력받은 새로운 숫자 추가 무조건 0 번 인덱스에 추가
