@@ -9,6 +9,9 @@ public class Main {
 	public static void main(String[] args) {
 		//test data set
 		int [] nums = {1,2,3};
+		String name = "test";
+		char ch =  name.charAt(3);
+		System.out.println(ch);
 		
 //		CollectionStack collectionStack = new CollectionStack();
 //		nums = collectionStack.add(nums);
@@ -37,20 +40,20 @@ public class Main {
 //			System.out.println(nums[i]);
 //		}
 		
-		CollectionSet collectionSet = new CollectionSet();
-//		nums = collectionSet.add(nums);
+//		CollectionSet collectionSet = new CollectionSet();
+////		nums = collectionSet.add(nums);
+////		for(int i=0 ; i<nums.length; i++) {
+////			
+////			System.out.println(nums[i]);
+////		}
+//		
+//		nums = collectionSet.remover(nums);
+//
 //		for(int i=0 ; i<nums.length; i++) {
 //			
 //			System.out.println(nums[i]);
 //		}
-		
-		nums = collectionSet.remover(nums);
-
-		for(int i=0 ; i<nums.length; i++) {
-			
-			System.out.println(nums[i]);
-		}
-		
+//		
 		
 		
 		
